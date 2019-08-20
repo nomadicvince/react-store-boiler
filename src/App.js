@@ -1,8 +1,11 @@
+//React imports
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
+//Style imports
 import './App.css';
 
+//App specific imports
 import HomePage from './pages/homepage/homepage.component';
 import ShopPage from './pages/shop/shop.component.jsx';
 import SignUpSignIn from './pages/sign-in-page/sign-up-sign-in.component';
@@ -48,7 +51,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header currentUser={this.state.currentUser} />
+        <Header />
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/shop" component={ShopPage} />
