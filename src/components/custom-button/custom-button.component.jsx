@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './custom-button.styles.scss';
+import './custom-buttom.styles.scss';
 
 const CustomButton = ({
   children,
@@ -17,4 +17,5 @@ const CustomButton = ({
     {children}
   </button>
 );
+
 export default CustomButton;
