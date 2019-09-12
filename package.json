@@ -1,6 +1,7 @@
 {
   "name": "cosmiq-clothing",
   "version": "0.1.0",
+  "proxy": "http://localhost:5000",
   "private": true,
   "dependencies": {
     "firebase": "6.0.2",
@@ -9,11 +10,12 @@
     "react-dom": "^16.8.6",
     "react-redux": "7.0.3",
     "react-router-dom": "5.0.0",
-    "react-stripe-checkout": "^2.6.3",
+    "react-stripe-checkout": "2.6.3",
     "redux": "4.0.1",
     "redux-logger": "3.0.6",
     "redux-persist": "5.10.0",
-    "reselect": "4.0.0"
+    "reselect": "4.0.0",
+    "styled-components": "4.2.0"
   },
   "devDependencies": {
     "react-scripts": "3.0.0"
@@ -42,8 +44,16 @@
       "last 1 safari version"
     ]
   },
-  "description": "We have now created our collection page and converted our shop items data over from an array to an object to better leverage our url parameters! Converting arrays over to objects to store data is called data-normalization and it makes searching for specific elements in our code much easier and efficient!",
+  "description": "We've moved our shop data into our firestore database, now we need to modify our application in such a way that considers our data being loaded asynchronously. We have created a WithSpinner HOC as well as modified our shop to initialize the call for data.",
   "main": "index.js",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nomadicvince/react-store-boiler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nomadicvince/react-store-boiler/issues"
+  },
+  "homepage": "https://github.com/nomadicvince/react-store-boiler#readme"
 }
